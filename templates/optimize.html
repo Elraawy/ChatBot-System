@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3>Add new Data:</h3>
+<form action="/train/" method="POST" >
+    {% csrf_token %}
+
+    <p style="font-size: 20px">Select a tag:</p>
+        <select class="form-select " name="tag" >
+    <option selected value="greeting">greeting</option>
+    <option value="goodbye">goodbye</option>
+    <option value="thanks">thanks</option>
+    <option value="items">items</option>
+    <option value="payments">payments</option>
+    <option value="delivery">delivery</option>
+    <option value="funny">funny</option>
+</select>
+    <br>
+    </label>
+    <br>
+    <p style="font-size: 20px">Pattern:</p>
+    <input type="text" name = "pattern">
+    <br><br>
+    <p style="font-size: 20px">Response:</p>
+        <input type="text" name = "response">
+    <br> <br>
+    <button type="submit" class="btn btn-outline-secondary"> Add </button>
+</form>
+{% endblock %}

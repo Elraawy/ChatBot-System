@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Chatbot</h2>
+<p>Type Clear to delete all messages</p>
+{% if 1 %}
+
+{% for con in cons %}
+<div>
+<p><strong>You: </strong>{{ con.content }}</p>
+<p><strong>Art:</strong> {{ con.response }}</p>
+    <hr>
+</div>
+{% endfor %}
+
+{% endif %}
+<form action="/main/" method="POST" >
+    {% csrf_token %}
+
+    <label for="msg" class="form-label" style="font-size: 20px">Enter a Message:
+        <input class="form-control" type="text" name="msg">
+    </label>
+    <br>
+{#    <label for="title">Title:#}
+{#        <input type="text" name = "title">#}
+{#    </label>#}
+
+    <button type="submit" class="btn btn-outline-secondary"> Enter </button>
+</form>
+{% endblock %}

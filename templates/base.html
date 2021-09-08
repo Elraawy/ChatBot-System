@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot system</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body class="container" style="background-color: #171515; color: #c4c2c2;">
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/main/" style="color:gray; font-size: 24px;">Chat</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/train/" style="color:gray; font-size: 24px;">Optimize</a>
+  </li>
+</ul>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
