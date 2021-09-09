@@ -1,0 +1,1 @@
+web: gunicorn artoria.wsgi --log-file -
