@@ -1,1 +1,1 @@
-web: gunicorn artoria.wsgi --log-file -
+web: gunicorn artoria.wsgi
