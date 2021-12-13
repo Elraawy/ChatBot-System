@@ -5,7 +5,7 @@ ChatBot Managment System
 Clone this Project:
 
 ```bash
-git clone https://github.com/Elraawy/ChatBot-System.git
+git clone https://github.com/a-elrawy/ChatBot-System.git
 ```
 Go to Project Directory:
 ```bash
